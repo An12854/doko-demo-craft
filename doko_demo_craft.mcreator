@@ -1,0 +1,122 @@
+{
+  "mod_elements": [
+    {
+      "name": "Kuro",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuro"
+    },
+    {
+      "name": "ToroInoue",
+      "type": "livingentity",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "toro_inoue"
+    },
+    {
+      "name": "KuroHostile",
+      "type": "livingentity",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuro_hostile"
+    },
+    {
+      "name": "BadLuck",
+      "type": "achievement",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bad_luck"
+    },
+    {
+      "name": "KuroEntityIsHurt",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kuro_entity_is_hurt",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ricky",
+      "type": "livingentity",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ricky"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.doko_demo_craft.toro_inoue_spawn_egg": "Toro Inoue Spawn Egg",
+      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostile",
+      "entity.doko_demo_craft.kuro": "Kuro",
+      "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
+      "advancements.bad_luck.title": "Bad Luck",
+      "item.doko_demo_craft.kuro_spawn_egg": "Kuro Spawn Egg",
+      "entity.doko_demo_craft.ricky": "Ricky",
+      "advancements.bad_luck.descr": "Attack Kuro or Toro",
+      "item.doko_demo_craft.ricky_spawn_egg": "Ricky Spawn Egg",
+      "item.doko_demo_craft.kuro_hostile_spawn_egg": "Kuro Hostile Spawn Egg"
+    },
+    "es_es": {
+      "item.doko_demo_craft.toro_inoue_spawn_egg": "Generar Toro Inoue",
+      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostil",
+      "entity.doko_demo_craft.kuro": "Kuro",
+      "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
+      "advancements.bad_luck.title": "Bad Luck",
+      "item.doko_demo_craft.kuro_spawn_egg": "Generar Kuro",
+      "entity.doko_demo_craft.ricky": "Ricky",
+      "advancements.bad_luck.descr": "Attack Kuro",
+      "item.doko_demo_craft.ricky_spawn_egg": "Generar Ricky",
+      "item.doko_demo_craft.kuro_hostile_spawn_egg": "Generar Kuro Hostil"
+    },
+    "pt_pt": {
+      "item.doko_demo_craft.toro_inoue_spawn_egg": "Ovo de invocação de Toro Inoue",
+      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostil",
+      "entity.doko_demo_craft.kuro": "Kuro",
+      "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
+      "advancements.bad_luck.title": "Bad Luck",
+      "item.doko_demo_craft.kuro_spawn_egg": "Ovo de invocação de Kuro",
+      "entity.doko_demo_craft.ricky": "Ricky",
+      "advancements.bad_luck.descr": "Attack Kuro",
+      "item.doko_demo_craft.ricky_spawn_egg": "Ovo de invocação de Ricky ",
+      "item.doko_demo_craft.kuro_hostile_spawn_egg": "Ovo de invocação de Kuro Hostil"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "doko_demo_craft",
+    "modName": "Doko Demo Craft",
+    "version": "1.0.0",
+    "author": "An12854",
+    "license": "GNU General Public License version 3 (GPLv3)",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Thank you to the people who helped me",
+    "modElementsPackage": "net.an.dokodemocraft",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200120510
+}

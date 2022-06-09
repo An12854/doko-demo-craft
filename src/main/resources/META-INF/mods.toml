@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[40,)"
+license="GNU General Public License version 3 (GPLv3)"
+
+[[mods]]
+modId="doko_demo_craft"
+version="1.0.0"
+displayName="Doko Demo Craft"
+credits="Thank you to the people who helped me"
+displayURL="https://mcreator.net"
+authors="An12854"
+
+[[dependencies.doko_demo_craft]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+
