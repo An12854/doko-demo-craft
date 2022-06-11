@@ -11,8 +11,10 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.an.dokodemocraft.client.renderer.ToroInoueRenderer;
 import net.an.dokodemocraft.client.renderer.RickyRenderer;
+import net.an.dokodemocraft.client.renderer.PierreYamamotoRenderer;
 import net.an.dokodemocraft.client.renderer.KuroRenderer;
 import net.an.dokodemocraft.client.renderer.KuroHostileRenderer;
+import net.an.dokodemocraft.client.renderer.JunMiharaRenderer;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class DokoDemoCraftModEntityRenderers {
@@ -22,5 +24,7 @@ public class DokoDemoCraftModEntityRenderers {
 		event.registerEntityRenderer(DokoDemoCraftModEntities.TORO_INOUE.get(), ToroInoueRenderer::new);
 		event.registerEntityRenderer(DokoDemoCraftModEntities.KURO_HOSTILE.get(), KuroHostileRenderer::new);
 		event.registerEntityRenderer(DokoDemoCraftModEntities.RICKY.get(), RickyRenderer::new);
+		event.registerEntityRenderer(DokoDemoCraftModEntities.JUN_MIHARA.get(), JunMiharaRenderer::new);
+		event.registerEntityRenderer(DokoDemoCraftModEntities.PIERRE_YAMAMOTO.get(), PierreYamamotoRenderer::new);
 	}
 }

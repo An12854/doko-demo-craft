@@ -55,6 +55,46 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "ricky"
+    },
+    {
+      "name": "WhatIsWrongWithYou",
+      "type": "achievement",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "what_is_wrong_with_you"
+    },
+    {
+      "name": "DDCEntityDies",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ddc_entity_dies",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JunMihara",
+      "type": "livingentity",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "jun_mihara"
+    },
+    {
+      "name": "PierreYamamoto",
+      "type": "livingentity",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pierre_yamamoto"
     }
   ],
   "variable_elements": [],
@@ -62,38 +102,56 @@
   "language_map": {
     "en_us": {
       "item.doko_demo_craft.toro_inoue_spawn_egg": "Toro Inoue Spawn Egg",
-      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostile",
-      "entity.doko_demo_craft.kuro": "Kuro",
       "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
-      "advancements.bad_luck.title": "Bad Luck",
+      "entity.doko_demo_craft.kuro": "Kuro",
       "item.doko_demo_craft.kuro_spawn_egg": "Kuro Spawn Egg",
       "entity.doko_demo_craft.ricky": "Ricky",
-      "advancements.bad_luck.descr": "Attack Kuro or Toro",
+      "advancements.what_is_wrong_with_you.descr": "Kill any of the passive Doko Demo Craft mobs",
+      "item.doko_demo_craft.pierre_yamamoto_spawn_egg": "Pierre Yamamoto Spawn Egg",
       "item.doko_demo_craft.ricky_spawn_egg": "Ricky Spawn Egg",
+      "entity.doko_demo_craft.pierre_yamamoto": "Pierre Yamamoto",
+      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostile",
+      "item.doko_demo_craft.jun_mihara_spawn_egg": "Jun Mihara Spawn Egg",
+      "entity.doko_demo_craft.jun_mihara": "Jun Mihara",
+      "advancements.bad_luck.title": "Bad Luck",
+      "advancements.bad_luck.descr": "Attack Kuro or Toro",
+      "advancements.what_is_wrong_with_you.title": "What Is Wrong With You?",
       "item.doko_demo_craft.kuro_hostile_spawn_egg": "Kuro Hostile Spawn Egg"
     },
     "es_es": {
       "item.doko_demo_craft.toro_inoue_spawn_egg": "Generar Toro Inoue",
-      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostil",
-      "entity.doko_demo_craft.kuro": "Kuro",
       "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
-      "advancements.bad_luck.title": "Bad Luck",
+      "entity.doko_demo_craft.kuro": "Kuro",
       "item.doko_demo_craft.kuro_spawn_egg": "Generar Kuro",
       "entity.doko_demo_craft.ricky": "Ricky",
-      "advancements.bad_luck.descr": "Attack Kuro",
+      "advancements.what_is_wrong_with_you.descr": "Mata a cualquiera de los mobs pasivos de Doko Demo Craft",
+      "item.doko_demo_craft.pierre_yamamoto_spawn_egg": "Generar Pierre Yamamoto",
       "item.doko_demo_craft.ricky_spawn_egg": "Generar Ricky",
+      "entity.doko_demo_craft.pierre_yamamoto": "Pierre Yamamoto",
+      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostil",
+      "item.doko_demo_craft.jun_mihara_spawn_egg": "Generar Jun Mihara",
+      "entity.doko_demo_craft.jun_mihara": "Jun Mihara",
+      "advancements.bad_luck.title": "Mala Suerte",
+      "advancements.bad_luck.descr": "Attack Kuro",
+      "advancements.what_is_wrong_with_you.title": "¿Cúal Es Tu Problema?",
       "item.doko_demo_craft.kuro_hostile_spawn_egg": "Generar Kuro Hostil"
     },
     "pt_pt": {
       "item.doko_demo_craft.toro_inoue_spawn_egg": "Ovo de invocação de Toro Inoue",
-      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostil",
       "entity.doko_demo_craft.kuro": "Kuro",
       "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
-      "advancements.bad_luck.title": "Bad Luck",
       "item.doko_demo_craft.kuro_spawn_egg": "Ovo de invocação de Kuro",
       "entity.doko_demo_craft.ricky": "Ricky",
-      "advancements.bad_luck.descr": "Attack Kuro",
+      "advancements.what_is_wrong_with_you.descr": "Mata algum dos mobs passivos de Doko Demo Craft",
+      "item.doko_demo_craft.pierre_yamamoto_spawn_egg": "Ovo de invocação de Pierre Yamamoto",
       "item.doko_demo_craft.ricky_spawn_egg": "Ovo de invocação de Ricky ",
+      "entity.doko_demo_craft.pierre_yamamoto": "Pierre Yamamoto",
+      "entity.doko_demo_craft.kuro_hostile": "Kuro Hostil",
+      "item.doko_demo_craft.jun_mihara_spawn_egg": "Ovo de invocação de Jun Mihara",
+      "entity.doko_demo_craft.jun_mihara": "Jun Mihara",
+      "advancements.bad_luck.title": "Má Sorte",
+      "advancements.bad_luck.descr": "Attack Kuro",
+      "advancements.what_is_wrong_with_you.title": "What Is Wrong With You?",
       "item.doko_demo_craft.kuro_hostile_spawn_egg": "Ovo de invocação de Kuro Hostil"
     }
   },
@@ -106,6 +164,7 @@
     "modName": "Doko Demo Craft",
     "version": "1.0.0",
     "author": "An12854",
+    "websiteURL": "https://mcreator.net",
     "license": "GNU General Public License version 3 (GPLv3)",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,

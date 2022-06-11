@@ -2,10 +2,10 @@
   "_fv": 28,
   "_type": "livingentity",
   "definition": {
-    "mobName": "Ricky",
+    "mobName": "Pierre Yamamoto",
     "mobLabel": "",
-    "mobModelName": "Modelricky",
-    "mobModelTexture": "ricky.png",
+    "mobModelName": "Modelpierre_yamamoto",
+    "mobModelTexture": "pierre_yamamoto.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
@@ -13,11 +13,11 @@
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
-      "value": -5452657,
+      "value": -1324642,
       "falpha": 0.0
     },
     "spawnEggDotColor": {
-      "value": -16777216,
+      "value": -6198691,
       "falpha": 0.0
     },
     "creativeTab": {
@@ -46,13 +46,13 @@
     },
     "mobBehaviourType": "Creature",
     "mobCreatureType": "UNDEFINED",
-    "attackStrength": 3,
+    "attackStrength": 5,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
     "movementSpeed": 0.2,
-    "armorBaseValue": 0.0,
+    "armorBaseValue": 2.0,
     "trackingRange": 64,
-    "health": 15,
+    "health": 10,
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": false,
@@ -75,18 +75,18 @@
     "immuneToTrident": false,
     "immuneToAnvil": false,
     "immuneToWither": false,
-    "immuneToDragonBreath": false,
+    "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "Blocks.MAGMA"
+      "value": "Items.BONE"
     },
     "livingSound": {
       "value": ""
     },
     "hurtSound": {
-      "value": "entity.creeper.hurt"
+      "value": "entity.wolf.hurt"
     },
     "deathSound": {
-      "value": "entity.generic.death"
+      "value": "entity.wolf.death"
     },
     "stepSound": {
       "value": ""
@@ -103,10 +103,14 @@
     },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"72\" y=\"27\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
-    "breedable": false,
-    "tameable": false,
-    "breedTriggerItems": [],
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"78\" y=\"18\"><next><block type=\"follow_owner\"><field name=\"speed\">1</field><field name=\"min_distance\">10</field><field name=\"max_distance\">2</field><field name=\"condition\">null,null</field><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"protect_owner\"><field name=\"condition\">null,null</field><next><block type=\"fight_as_owner\"><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "breedable": true,
+    "tameable": true,
+    "breedTriggerItems": [
+      {
+        "value": "Items.BEEF"
+      }
+    ],
     "ranged": false,
     "rangedAttackItem": {
       "value": ""

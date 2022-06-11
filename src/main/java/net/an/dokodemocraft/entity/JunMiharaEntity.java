@@ -10,9 +10,9 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.RandomLookAroundGoal;
@@ -35,19 +35,19 @@ import net.an.dokodemocraft.procedures.DDCEntityDiesProcedure;
 import net.an.dokodemocraft.init.DokoDemoCraftModEntities;
 
 @Mod.EventBusSubscriber
-public class RickyEntity extends PathfinderMob {
+public class JunMiharaEntity extends PathfinderMob {
 	@SubscribeEvent
 	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(DokoDemoCraftModEntities.RICKY.get(), 10, 1, 1));
+		event.getSpawns().getSpawner(MobCategory.CREATURE).add(new MobSpawnSettings.SpawnerData(DokoDemoCraftModEntities.JUN_MIHARA.get(), 10, 1, 1));
 	}
 
-	public RickyEntity(PlayMessages.SpawnEntity packet, Level world) {
-		this(DokoDemoCraftModEntities.RICKY.get(), world);
+	public JunMiharaEntity(PlayMessages.SpawnEntity packet, Level world) {
+		this(DokoDemoCraftModEntities.JUN_MIHARA.get(), world);
 	}
 
-	public RickyEntity(EntityType<RickyEntity> type, Level world) {
+	public JunMiharaEntity(EntityType<JunMiharaEntity> type, Level world) {
 		super(type, world);
-		xpReward = 0;
+		xpReward = 3;
 		setNoAi(false);
 	}
 
@@ -72,17 +72,24 @@ public class RickyEntity extends PathfinderMob {
 
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
-		this.spawnAtLocation(new ItemStack(Blocks.MAGMA_BLOCK));
+		this.spawnAtLocation(new ItemStack(Items.RABBIT_HIDE));
 	}
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.creeper.hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.rabbit.hurt"));
 	}
 
 	@Override
 	public SoundEvent getDeathSound() {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.rabbit.death"));
+	}
+
+	@Override
+	public boolean hurt(DamageSource source, float amount) {
+		if (source == DamageSource.DRAGON_BREATH)
+			return false;
+		return super.hurt(source, amount);
 	}
 
 	@Override
@@ -92,7 +99,7 @@ public class RickyEntity extends PathfinderMob {
 	}
 
 	public static void init() {
-		SpawnPlacements.register(DokoDemoCraftModEntities.RICKY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+		SpawnPlacements.register(DokoDemoCraftModEntities.JUN_MIHARA.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
 				(entityType, world, reason, pos,
 						random) -> (world.getBlockState(pos.below()).getMaterial() == Material.GRASS && world.getRawBrightness(pos, 0) > 8));
 	}
@@ -100,9 +107,9 @@ public class RickyEntity extends PathfinderMob {
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
 		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.2);
-		builder = builder.add(Attributes.MAX_HEALTH, 15);
+		builder = builder.add(Attributes.MAX_HEALTH, 5);
 		builder = builder.add(Attributes.ARMOR, 0);
-		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
+		builder = builder.add(Attributes.ATTACK_DAMAGE, 0);
 		return builder;
 	}
 }

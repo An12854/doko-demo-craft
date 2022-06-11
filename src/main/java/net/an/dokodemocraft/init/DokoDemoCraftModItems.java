@@ -25,4 +25,10 @@ public class DokoDemoCraftModItems {
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> RICKY = REGISTRY.register("ricky_spawn_egg",
 			() -> new ForgeSpawnEggItem(DokoDemoCraftModEntities.RICKY, -5452657, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> JUN_MIHARA = REGISTRY.register("jun_mihara_spawn_egg",
+			() -> new ForgeSpawnEggItem(DokoDemoCraftModEntities.JUN_MIHARA, -530978, -16777216,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> PIERRE_YAMAMOTO = REGISTRY.register("pierre_yamamoto_spawn_egg",
+			() -> new ForgeSpawnEggItem(DokoDemoCraftModEntities.PIERRE_YAMAMOTO, -1324642, -6198691,
+					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 }

@@ -18,8 +18,10 @@ import net.minecraft.world.entity.Entity;
 
 import net.an.dokodemocraft.entity.ToroInoueEntity;
 import net.an.dokodemocraft.entity.RickyEntity;
+import net.an.dokodemocraft.entity.PierreYamamotoEntity;
 import net.an.dokodemocraft.entity.KuroHostileEntity;
 import net.an.dokodemocraft.entity.KuroEntity;
+import net.an.dokodemocraft.entity.JunMiharaEntity;
 import net.an.dokodemocraft.DokoDemoCraftMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -45,6 +47,16 @@ public class DokoDemoCraftModEntities {
 					.setUpdateInterval(3).setCustomClientFactory(RickyEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<JunMiharaEntity>> JUN_MIHARA = register("jun_mihara",
+			EntityType.Builder.<JunMiharaEntity>of(JunMiharaEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(JunMiharaEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<PierreYamamotoEntity>> PIERRE_YAMAMOTO = register("pierre_yamamoto",
+			EntityType.Builder.<PierreYamamotoEntity>of(PierreYamamotoEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true)
+					.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(PierreYamamotoEntity::new)
+
+					.sized(0.6f, 1.8f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));
@@ -57,6 +69,8 @@ public class DokoDemoCraftModEntities {
 			ToroInoueEntity.init();
 			KuroHostileEntity.init();
 			RickyEntity.init();
+			JunMiharaEntity.init();
+			PierreYamamotoEntity.init();
 		});
 	}
 
@@ -66,5 +80,7 @@ public class DokoDemoCraftModEntities {
 		event.put(TORO_INOUE.get(), ToroInoueEntity.createAttributes().build());
 		event.put(KURO_HOSTILE.get(), KuroHostileEntity.createAttributes().build());
 		event.put(RICKY.get(), RickyEntity.createAttributes().build());
+		event.put(JUN_MIHARA.get(), JunMiharaEntity.createAttributes().build());
+		event.put(PIERRE_YAMAMOTO.get(), PierreYamamotoEntity.createAttributes().build());
 	}
 }

@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "minecraft:wooden_sword"
+      "item": "minecraft:stone_sword"
     },
     "title": {
-      "translate": "advancements.bad_luck.title"
+      "translate": "advancements.what_is_wrong_with_you.title"
     },
     "description": {
-      "translate": "advancements.bad_luck.descr"
+      "translate": "advancements.what_is_wrong_with_you.descr"
     },
     "frame": "task",
     "show_toast": true,
@@ -15,9 +15,9 @@
     "hidden": false
   },
   "criteria": {
-    "bad_luck": {
+    "what_is_wrong_with_you": {
       "trigger": "minecraft:impossible"
     }
   },
-  "parent": "doko_demo_craft:what_is_wrong_with_you"
+  "parent": "minecraft:adventure/kill_a_mob"
 }
