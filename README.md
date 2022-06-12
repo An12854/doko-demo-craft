@@ -7,9 +7,9 @@ Mod that adds the main cast of Doko Demo Issyo as mobs in Minecraft
 
 • Kuro
 
-• Jun Mihara (In development)
+• Jun Mihara
 
-• Pierre Yamamoto (In development)
+• Pierre Yamamoto
 
 • Ricky
 
