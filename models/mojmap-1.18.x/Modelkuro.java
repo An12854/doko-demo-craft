@@ -1,4 +1,4 @@
-// Made with Blockbench 4.2.4
+// Made with Blockbench 4.2.5
 // Exported for Minecraft version 1.17 - 1.18 with Mojang mappings
 // Paste this class into your mod and generate all required imports
 
@@ -29,9 +29,9 @@ public class Modelkuro<T extends Entity> extends EntityModel<T> {
 
 		PartDefinition Head = partdefinition.addOrReplaceChild("Head",
 				CubeListBuilder.create().texOffs(0, 0)
-						.addBox(-3.0F, -6.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(24, 8)
-						.addBox(1.0F, -8.0F, -1.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)).texOffs(24, 12)
-						.addBox(-3.0F, -8.0F, -1.0F, 2.0F, 2.0F, 2.0F, new CubeDeformation(0.0F)),
+						.addBox(-3.0F, -6.0F, -3.0F, 6.0F, 6.0F, 6.0F, new CubeDeformation(0.0F)).texOffs(25, 9)
+						.addBox(1.0F, -8.0F, -1.0F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)).texOffs(25, 13)
+						.addBox(-3.0F, -8.0F, -1.0F, 2.0F, 2.0F, 1.0F, new CubeDeformation(0.0F)),
 				PartPose.offset(0.0F, 10.0F, 1.0F));
 
 		PartDefinition Torso = partdefinition.addOrReplaceChild("Torso",

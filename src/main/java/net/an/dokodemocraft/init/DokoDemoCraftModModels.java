@@ -11,9 +11,11 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.an.dokodemocraft.client.model.Modeltoro_inoue;
 import net.an.dokodemocraft.client.model.Modelricky;
+import net.an.dokodemocraft.client.model.Modelr_suzuki;
 import net.an.dokodemocraft.client.model.Modelpierre_yamamoto;
 import net.an.dokodemocraft.client.model.Modelkuro;
 import net.an.dokodemocraft.client.model.Modeljun_mihara;
+import net.an.dokodemocraft.client.model.ModelSora;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = {Dist.CLIENT})
 public class DokoDemoCraftModModels {
@@ -21,7 +23,9 @@ public class DokoDemoCraftModModels {
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
 		event.registerLayerDefinition(Modelpierre_yamamoto.LAYER_LOCATION, Modelpierre_yamamoto::createBodyLayer);
 		event.registerLayerDefinition(Modelricky.LAYER_LOCATION, Modelricky::createBodyLayer);
+		event.registerLayerDefinition(ModelSora.LAYER_LOCATION, ModelSora::createBodyLayer);
 		event.registerLayerDefinition(Modeltoro_inoue.LAYER_LOCATION, Modeltoro_inoue::createBodyLayer);
+		event.registerLayerDefinition(Modelr_suzuki.LAYER_LOCATION, Modelr_suzuki::createBodyLayer);
 		event.registerLayerDefinition(Modeljun_mihara.LAYER_LOCATION, Modeljun_mihara::createBodyLayer);
 		event.registerLayerDefinition(Modelkuro.LAYER_LOCATION, Modelkuro::createBodyLayer);
 	}

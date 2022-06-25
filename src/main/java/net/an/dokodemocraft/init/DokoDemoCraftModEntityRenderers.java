@@ -10,7 +10,9 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.an.dokodemocraft.client.renderer.ToroInoueRenderer;
+import net.an.dokodemocraft.client.renderer.SoraRenderer;
 import net.an.dokodemocraft.client.renderer.RickyRenderer;
+import net.an.dokodemocraft.client.renderer.RSuzukiRenderer;
 import net.an.dokodemocraft.client.renderer.PierreYamamotoRenderer;
 import net.an.dokodemocraft.client.renderer.KuroRenderer;
 import net.an.dokodemocraft.client.renderer.KuroHostileRenderer;
@@ -26,5 +28,7 @@ public class DokoDemoCraftModEntityRenderers {
 		event.registerEntityRenderer(DokoDemoCraftModEntities.RICKY.get(), RickyRenderer::new);
 		event.registerEntityRenderer(DokoDemoCraftModEntities.JUN_MIHARA.get(), JunMiharaRenderer::new);
 		event.registerEntityRenderer(DokoDemoCraftModEntities.PIERRE_YAMAMOTO.get(), PierreYamamotoRenderer::new);
+		event.registerEntityRenderer(DokoDemoCraftModEntities.R_SUZUKI.get(), RSuzukiRenderer::new);
+		event.registerEntityRenderer(DokoDemoCraftModEntities.SORA.get(), SoraRenderer::new);
 	}
 }

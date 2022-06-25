@@ -31,4 +31,8 @@ public class DokoDemoCraftModItems {
 	public static final RegistryObject<Item> PIERRE_YAMAMOTO = REGISTRY.register("pierre_yamamoto_spawn_egg",
 			() -> new ForgeSpawnEggItem(DokoDemoCraftModEntities.PIERRE_YAMAMOTO, -1324642, -6198691,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> R_SUZUKI = REGISTRY.register("r_suzuki_spawn_egg",
+			() -> new ForgeSpawnEggItem(DokoDemoCraftModEntities.R_SUZUKI, -1381391, -16777216, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+	public static final RegistryObject<Item> SORA = REGISTRY.register("sora_spawn_egg",
+			() -> new ForgeSpawnEggItem(DokoDemoCraftModEntities.SORA, -5381633, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 }

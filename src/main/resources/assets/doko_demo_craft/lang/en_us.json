@@ -1,7 +1,8 @@
 {
   "item.doko_demo_craft.toro_inoue_spawn_egg": "Toro Inoue Spawn Egg",
-  "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
+  "item.doko_demo_craft.r_suzuki_spawn_egg": "R. Suzuki Spawn Egg",
   "entity.doko_demo_craft.kuro": "Kuro",
+  "entity.doko_demo_craft.toro_inoue": "Toro Inoue",
   "item.doko_demo_craft.kuro_spawn_egg": "Kuro Spawn Egg",
   "entity.doko_demo_craft.ricky": "Ricky",
   "advancements.what_is_wrong_with_you.descr": "Kill any of the passive Doko Demo Craft mobs",
@@ -10,9 +11,12 @@
   "entity.doko_demo_craft.pierre_yamamoto": "Pierre Yamamoto",
   "entity.doko_demo_craft.kuro_hostile": "Kuro Hostile",
   "item.doko_demo_craft.jun_mihara_spawn_egg": "Jun Mihara Spawn Egg",
+  "item.doko_demo_craft.sora_spawn_egg": "Sora Spawn Egg",
   "entity.doko_demo_craft.jun_mihara": "Jun Mihara",
   "advancements.bad_luck.title": "Bad Luck",
   "advancements.bad_luck.descr": "Attack Kuro or Toro",
   "advancements.what_is_wrong_with_you.title": "What Is Wrong With You?",
+  "entity.doko_demo_craft.r_suzuki": "R. Suzuki",
+  "entity.doko_demo_craft.sora": "Sora",
   "item.doko_demo_craft.kuro_hostile_spawn_egg": "Kuro Hostile Spawn Egg"
 }
