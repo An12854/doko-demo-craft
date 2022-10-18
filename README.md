@@ -13,9 +13,9 @@ Mod that adds the main cast of Doko Demo Issyo as mobs in Minecraft
 
 • Ricky
 
-• R. Suzuki (In development)
+• R. Suzuki
 
-• Sora (In development)
+• Sora
 
 ### Features:
 
